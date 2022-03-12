@@ -18,7 +18,9 @@ model Link {
   url       String
   shortUrl  String
   userId    String?
+  saleId    String?
   User      User?    @relation(fields: [userId], references: [id])
+  Sale      Sale?    @relation(fields: [saleId], references: [id])
 }
 
 model User {
