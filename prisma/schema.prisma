@@ -29,3 +29,7 @@ model User {
   email     String
   links     Link[]
 }
+
+model sale {
+  id        int
+}
