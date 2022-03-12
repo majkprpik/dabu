@@ -203,6 +203,36 @@
           ],
         },
         {
+          model: 'Sale',
+          endpoints: [
+            {
+              method: 'GET',
+              url: '/api/user',
+              description: 'Get all users',
+            },
+            {
+              method: 'GET',
+              url: '/api/user?id=:id',
+              description: 'Get a single user',
+            },
+            {
+              method: 'POST',
+              url: '/api/userd',
+              description: 'Create a single user',
+            },
+            {
+              method: 'PUT',
+              url: '/api/user?id=:id',
+              description: 'Update a single user',
+            },
+            {
+              method: 'DELETE',
+              url: '/api/user?id=:id',
+              description: 'Delete a single user',
+            },
+          ],
+        },
+        {
           model: 'Link',
           endpoints: [
             {
