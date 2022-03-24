@@ -30,6 +30,3 @@ model User {
   links     Link[]
 }
 
-model sale {
-  id        Int @id @unique
-}
